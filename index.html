@@ -20,18 +20,25 @@
                 <v-card-title primary-title>
                   <div>
                     <h3 class="headline mb-0">Lion</h3>
-                    <template>
-                      <div class="text-xs-center">
-                        <v-menu offset-y>
-                          <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
-                          <v-list>
-                            <v-list-tile v-for="item in items" :key="item.title" @click="">
-                              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                            </v-list-tile>
-                          </v-list>
-                        </v-menu>
-                      </div>
-                    </template>
+                    <h5>1-5 star rating:</h5>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-flex xs12 sm4 offset-sm4>
+                      <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
+                    </v-flex>
 
                   </div>
                 </v-card-title>
@@ -53,9 +60,25 @@
                 <v-card-title primary-title>
                   <div>
                     <h3 class="headline mb-0">Rabbits</h3>
+                    <h5>1-5 star rating:</h5>
                     <v-btn icon>
                       <v-icon>favorite</v-icon>
                     </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-flex xs12 sm4 offset-sm4>
+                      <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
+                    </v-flex>
                   </div>
                 </v-card-title>
                 <v-card-actions>
@@ -76,7 +99,25 @@
                 <v-card-title primary-title>
                   <div>
                     <h3 class="headline mb-0">Penguins</h3>
-                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                    <h5>1-5 star rating:</h5>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                    <v-flex xs12 sm4 offset-sm4>
+                      <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
+                    </v-flex>
                   </div>
                 </v-card-title>
                 <v-card-actions>
