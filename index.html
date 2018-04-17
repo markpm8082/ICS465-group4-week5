@@ -5,6 +5,7 @@
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
+ <title>ICS 465 Group 4</title>
 <body>
 <div id="app">
   <v-app>
@@ -22,19 +23,19 @@
                     <h3 class="headline mb-0">Lion</h3>
                     <h5>1-5 star rating:</h5>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon color="yellow">star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-flex xs12 sm4 offset-sm4>
                       <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
@@ -45,6 +46,9 @@
                 <v-card-actions>
                   <v-btn flat color="orange">Share</v-btn>
                   <v-btn flat color="orange">Explore</v-btn>
+                  <v-btn flat color="orange">Save</v-btn>
+                  <v-btn flat color="orange">Copy</v-btn>
+                  <v-btn flat color="orange">Flag</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
@@ -62,19 +66,19 @@
                     <h3 class="headline mb-0">Rabbits</h3>
                     <h5>1-5 star rating:</h5>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon color="yellow" >star</v-icon>
                     </v-btn>
                     <v-flex xs12 sm4 offset-sm4>
                       <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
@@ -84,6 +88,9 @@
                 <v-card-actions>
                   <v-btn flat color="orange">Share</v-btn>
                   <v-btn flat color="orange">Explore</v-btn>
+                  <v-btn flat color="orange">Save</v-btn>
+                  <v-btn flat color="orange">Copy</v-btn>
+                  <v-btn flat color="orange">Flag</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
@@ -100,20 +107,20 @@
                   <div>
                     <h3 class="headline mb-0">Penguins</h3>
                     <h5>1-5 star rating:</h5>
-                    <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                    <v-btn icon type="button" @click="activeBtn = 'btn1'" :class="{active: activeBtn === 'btn1' }">
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>star</v-icon>
                     </v-btn>
                     <v-btn icon>
-                      <v-icon>favorite</v-icon>
+                      <v-icon>starb</v-icon>
                     </v-btn>
                     <v-flex xs12 sm4 offset-sm4>
                       <v-text-field v-model="text" type="text" label="Comment:"></v-text-field>
@@ -121,25 +128,20 @@
                   </div>
                 </v-card-title>
                 <v-card-actions>
-                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange" >Share</v-btn>
                   <v-btn flat color="orange">Explore</v-btn>
+                  <v-btn flat color="orange">Save</v-btn>
+                  <v-btn flat color="orange">Copy</v-btn>
+                  <v-btn flat color="orange">Flag</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
           </v-layout>
         </template>
-
-
-
-
-
       </v-container>
     </v-content>
   </v-app>
 </div>
-
-
-
 
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
