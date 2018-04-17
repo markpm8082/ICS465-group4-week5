@@ -4,16 +4,101 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div id="app">
   <v-app>
     <v-content>
-      <v-container>Hello world</v-container>
+      <v-container>
+
+        <template>
+          <v-layout>
+            <v-flex xs12 sm6 offset-sm3>
+              <v-card>
+                <v-card-media src="http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Lion</h3>
+                    <template>
+                      <div class="text-xs-center">
+                        <v-menu offset-y>
+                          <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
+                          <v-list>
+                            <v-list-tile v-for="item in items" :key="item.title" @click="">
+                              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                            </v-list-tile>
+                          </v-list>
+                        </v-menu>
+                      </div>
+                    </template>
+
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </template>
+
+        <template>
+          <v-layout>
+            <v-flex xs12 sm6 offset-sm3>
+              <v-card>
+                <v-card-media src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB0sD0Ko0ivUWaUzPlzeBvFmeUrhXuEshKBitQ9CWd4n6hviL0" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Rabbits</h3>
+                    <v-btn icon>
+                      <v-icon>favorite</v-icon>
+                    </v-btn>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </template>
+
+        <template>
+          <v-layout>
+            <v-flex xs12 sm6 offset-sm3>
+              <v-card>
+                <v-card-media src="http://www.slate.com/content/dam/slate/blogs/wild_things/2015/09/02/150902_WILD_CutePenguins.jpg.CROP.promo-xlarge2.jpg" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Penguins</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </template>
+
+
+
+
+
+      </v-container>
     </v-content>
   </v-app>
 </div>
+
+
+
 
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
